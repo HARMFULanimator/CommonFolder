@@ -13,7 +13,7 @@ checkNumber(a,b);
 
 var a = 'RARE';
 function addString(a) {
-       return "You are input: " + a  ;
+       return "Вы ввели: " + a  ;
 }
 addString(a);
 
