@@ -1,6 +1,7 @@
 //-------------------------------------------------Task1
-var a = 2, b = 1;
-function checkNumber(a,b) {
+var a = prompt("Введите a");
+var b = prompt("Введите b");
+function checkNumber(a, b) {
     if(a > b) {
        return true;
     }
@@ -9,11 +10,18 @@ function checkNumber(a,b) {
 }
 checkNumber(a,b);
 
+//or other variant----------------------------------Task1
+
+var a = prompt("Введите a");
+var b = prompt("Введите b");
+var myFunction = new Function("a", "b", "return a > b");
+myFunction(a,b);
+
 //-------------------------------------------------Task2
 
 var a = 'RARE';
 function addString(a) {
-       return "Вы ввели: " + a  ;
+       return "Вы ввели: " + a;
 }
 addString(a);
 
@@ -23,7 +31,7 @@ var f;
 function checkType(f){
 if (f === null){
 return null;
-}
+} else
 if (f === undefined) {
 return undefined;
 }
@@ -42,12 +50,13 @@ checkObj(Obj);
 
 //-------------------------------------------------Task5
 
-var a = 20;
-function allNumbers(a){
-var c = "0";
-for(var i = 1; i <= a; i++) {
-  c += i;
+var number = prompt("Введите number");
+function allNumbers(number) {
+	for(var i = number; i >= 0; i--) {
+		console.log(i);
+	}
+	for(i = 1; i <= number; i++) {
+		console.log(i);
+	}
 }
-console.log(c);
-}
-allNumbers(a);
+console.log(allNumbers(number));
