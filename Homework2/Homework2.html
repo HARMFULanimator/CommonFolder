@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+    <html> 
+        <head> 
+            <meta charset = "utf-8" /> 
+            <meta http-equiv = "X-UA-Compatible" content="IE=edge"> 
+            <title>Homework2</title> 
+            <meta name ="viewport" content = "width=device-width, initial-scale=1"> 
+            <link rel = "stylesheet" type = "text/css" media = "screen" href = "main.css" /> 
+            <script src = "/git/Homework2/Homework2.js"></script> 
+        </head>
+            <input type = "text" id="t1">
+        <select name = "town" id = "s1"> 
+            <option value = "Undefined">Undefined</option> 
+            <option value = "Null">Null</option> 
+            <option value = "NaN">NaN</option> 
+        </select>
+            <input type = "button" onclick = "f()" value = "ok"><br><br>
+            <input type = "button" onclick = "random()" value = "random button"><br><br>
+            <input type = "button" onclick = "checkObjectEmpty()" value = "check object">
+        <select name = "checkObjectEmpty" id = "obj1"> 
+                <option value = "empty" >Empty</option> 
+                <option value = "full">Full</option>
+        </select><br><br>
+        <input type = "button" onclick = "comparisonObject()" value = "comparison">
+    <script> 
+        function f() {
+            if(document.getElementById('t1').value !== "") {
+                var a = document.getElementById('t1').value;
+            } 
+                if(document.getElementById('s1').value == "Undefined") {
+                    if(document.getElementById('t1').value == "undefined") {
+                        a = undefined
+                    }
+                    alert(Module.und(a)); 
+                } 
+            if(document.getElementById('s1').value == "Null") {
+                if(document.getElementById('t1').value == "null") {
+                    a = null
+                }
+                alert(Module.nul(a));
+            } 
+            if(document.getElementById('s1').value == "NaN") {
+                if(document.getElementById('t1').value == "NaN") {
+                    a = document.getElementById('t1').value/0;
+                }
+                alert(Module.NaN(a));
+            }
+
+        }
+            function random() {
+                var first = -100, last = 10; 
+                alert(Module.rand(first,last));
+            }
+
+            function checkObjectEmpty() {
+                var Orbit = {};
+                if(document.getElementById('obj1').value == "full") {
+                    Orbit = {orbita: "Mars"};
+                }
+                alert(Module.emptyObject(Orbit));
+            }
+
+            function comparisonObject() {
+                var Data1 = {Galaxy: "MilkyWay", 
+                  SunshineSystem: {
+                    Planet1: "Merkury",
+                    Planet2: "Venus",
+                    Planet3: "Earth",
+                    Planet4: "Mars",
+                    Planet5: "Jupiter",
+                    Planet6: "Saturn",
+                    Planet7: "Uran",
+                    Planet8: "Neptun",
+                    Planet9: "Pluton" 
+                    }
+                };
+                var Data2 = {Galaxy: "MilkyWay", 
+                  SunshineSystem: {
+                    Planet1: "Merkury",
+                    Planet2: "Venus",
+                    Planet3: "Earth",
+                    Planet4: "Mars",
+                    Planet5: "Jupiter",
+                    Planet6: "Saturn",
+                    Planet7: "Uran",
+                    Planet8: "Neptun",
+                    }
+                };
+                alert(Module.comparisonDeepObject(Data1,Data2));
+            }
+    </script> 
+    </select> 
+    </body> 
+</html>
