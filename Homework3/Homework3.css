@@ -1,0 +1,57 @@
+#form {
+	margin: 200px 0px 0px 550px;
+	background: rgba(220, 220, 220, 1);
+	width: 220px;
+	height: 260px;
+	}
+a {
+	text-decoration: none;
+	color: black;
+}
+div {
+	margin: 15px 10px 10px 33px;
+}
+#zero {
+	width: 74px;
+}
+#equal {
+	position: absolute;
+	margin-top: -27px;
+	height: 55px;
+}
+input {
+	width: 35px;
+	height: 28px;
+	text-align: center;
+}
+#ans {
+	margin-left: 14px;
+	margin-top: 30px;
+	width: 184px;
+	text-align: right;
+}
+#ansv {
+	position: absolute;
+	margin: 47px 0px 0px -185px;
+	width: 10px;
+	height: 10px;
+	background: white;
+	border: none;
+}
+#logjurnal {
+	margin-left: 780px;
+	margin-top: -275px;
+	background: rgba(220, 220, 220, 1);
+	width: 180px;
+	height: 260px;
+}
+#logjurnal p {
+    text-align: center;
+}
+#window {
+    margin: 10% 1% 0% 10%;
+    text-align: left;
+    width: 80px;
+    height:200px;
+    border: 2px solid black;
+}

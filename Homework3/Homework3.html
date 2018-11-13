@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/git/Homework3/Homework3.css">
+	
+</head>
+	<body>
+		<form id="form" name="calc" >
+			<input id="ans" type="textfield" name="ans" value="0">
+			<input id="ansv" type="textfield" name="ansv" disabled="">
+			<br>
+		<div>
+			<input id="backspace" type="button" value="&#8592;" onClick="backspace()">
+			<input id="devide" type="button" value="/" onClick="Operation('/')">
+			<input id="multiply" type="button" value="*"3 onClick="Operation('*')">
+			<input id="minus" type="button" value="-" onClick="Operation('-')">
+			<br>
+			<input id="seven" type="button" value="7" onClick="NumPressed(7)">
+			<input id="eight" type="button" value="8" onClick="NumPressed(8)">
+			<input id="nine" type="button" value="9" onClick="NumPressed(9)">
+			<input id="plus" type="button" value="+" onClick="Operation('+')">
+			<br>
+			<input id="four" type="button" value="4" onClick="NumPressed(4)">
+			<input id="five" type="button" value="5" onClick="NumPressed(5)">
+			<input id="six" type="button" value="6" onClick="NumPressed(6)">
+			<br>
+			<input id="one" type="button" value="1" onClick="NumPressed(1)">
+			<input id="two" type="button" value="2" onClick="NumPressed(2)">
+			<input id="three" type="button" value="3" onClick="NumPressed(3)">
+			<input id="equal" type="button" value="=" onClick="Operation('=')">
+			<br>
+			<input id="zero" type="button" value="0" onClick="NumPressed(0)">
+			<input id="dot" type="button" value="."	 onClick="toFloat()">
+			<input id="clear" type="button" value="C" onclick="Clear()">
+		    </br>
+		    </br>
+		</div>
+		</form>
+		<div id="logjurnal"><p>Jurnal</p>
+             <div><p id="window"></p></div>
+		</div> 
+<script type="text/javascript" src="/git/Homework3/Homework3.js"></script>
+</body>
+
